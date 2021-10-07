@@ -12,13 +12,12 @@ while(*src != '\0')
 {
 	if((*src>='a' && *src<='z'))
 	{
-*dest=*src-32;
+		*dest=*src-32;
 
 	}
 	else if(*src>='A' && *src<='Z')
 	{
 		*dest=*src+32;
-		
 	}
 	else
 	{
