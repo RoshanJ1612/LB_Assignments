@@ -1,7 +1,7 @@
-/*3. Write a program which accepts file name from user and count number of 
-white spaces from that file.
-Input : Demo.txt
-Output : Number of white spaces are 13*/
+/*4. Write a program which accepts file name and one character from user and 
+count number of occurrences of that characters from that file.
+Input : Demo.txt ‘M’
+Output : Frequency of M is 7*/
 
 #include<stdio.h>
 #include<stdlib.h>
