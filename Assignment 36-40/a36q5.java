@@ -1,10 +1,10 @@
-/*4. Write Java program which accept number of rows and number of columns 
+/*5. Write Java program which accept number of rows and number of columns 
 from user and display below pattern.
-Input : iRow = 4 iCol = 5
-Output : 	 4 4 4 4 4 
-		 3 3 3 3 3 
-		 2 2 2 2 2 
-		 1 1 1 1 1*/
+Input : iRow = 3 iCol = 4
+Output : 1 2  3  4
+	 5 6  7  8 
+	 9 10 11 12
+	 */
 
 import java.util.*;
 
