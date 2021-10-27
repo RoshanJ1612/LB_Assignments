@@ -2,9 +2,9 @@
 columns from user and display below pattern.
 Input : iRow = 4 iCol = 3
 Output : 1 2 3
-		 1 2 3
-		 1 2 3 
-		 1 2 3
+	 1 2 3
+	 1 2 3 
+	 1 2 3
 */
 
 import java.util.*;
