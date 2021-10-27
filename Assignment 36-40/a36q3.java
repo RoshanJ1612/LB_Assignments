@@ -1,7 +1,7 @@
 /*3. Write Java program which accept number of rows and number of columns 
 from user and display below pattern.
 Input : iRow = 3 iCol = 5
-Output : A A A A A 
+Output : 	 A A A A A 
 		 B B B B B
 		 C C C C C*/
 
