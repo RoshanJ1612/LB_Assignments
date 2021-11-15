@@ -42,29 +42,25 @@ void Display(PNODE Head)
 
 int SecondMax(PNODE Head)
 {
-	PNODE temp = Head;
-	PNODE temp2 = Head;
-	int iMax = temp->data;
-	int SMax = temp2->data;
+	int Max = Head->data;
+	int sMax = Head->data;
+
+	Head = Head->next;
 	
-	while(temp != NULL)
+	while(Head != NULL)
 	{
-		if(iMax < temp->data)
+		if(Head->data > Max)
 		{
-			iMax = temp->data;
+			sMax = Max;
+			Max = Head->data;
 		}
-		temp = temp->next;
-	}
-	
-	while( temp2 != NULL)
-	{
-		if((SMax > temp2->data) && ( temp2->data != iMax))
+		else if((Head->data < Max) && (Head->data > sMax))
 		{
-			SMax =  temp2->data;
+			sMax = Head->data;
 		}
-		 temp2 = temp2->next;
+		Head = Head->next;
 	}
-	return SMax;
+	return sMax;
 }
 
 int main()
