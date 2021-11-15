@@ -44,6 +44,7 @@ int SumDigit(PNODE Head)
 	int iAns = 0,iNo = 0, iDigit =0;
 	while(Head != NULL)
 	{
+		iAns = 0;
 		iNo = Head->data;
 		while(iNo != 0)
 		{
@@ -51,6 +52,7 @@ int SumDigit(PNODE Head)
 			iAns = iAns + iDigit;
 			iNo = iNo/10;
 		}
+		printf("%d\t",iAns);
 	Head = Head -> next;
 }
 return iAns;
@@ -76,12 +78,9 @@ int main()
 	printf("Element of Linked List are : \n");
 	Display(first);
 	
-	iRet = SumDigit(first);
-	printf("Addition of digits of element from singly  Linked list are : %d\n",iRet);
-	
+
+	printf("Addition of digits of element from singly  Linked list are : \n");
+	SumDigit(first);
 	
 	return 0;
 }
-	
-	
-
